@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+}
+
+i {
+  cursor: pointer;
+}
+
+/* Use Pseudeo Element To Create Word Another Color */
+.card h6::after {
+  content: " Web Devloper";
+  width: 100%;
+  height: 100%;
+  color: #2196f3;
+}
+
+/* Two Border In All Section */
+.about h3 .s1,
+.facts h3 .s1,
+.skills h3 .s1,
+.resum h3 .s1,
+.services h3 .s1,
+.test h3 .s1,
+.contact h3 .s1 {
+  border-bottom: 2px solid #ccc;
+  width: 15%;
+  bottom: -10px;
+  left: 42%;
+}
+
+.about h3 .s2,
+.facts h3 .s2,
+.skills h3 .s2,
+.resum h3 .s2,
+.services h3 .s2,
+.test h3 .s2,
+.contact h3 .s2 {
+  border-bottom: 2px solid #2196f3;
+  width: 4%;
+  left: 48%;
+  top: 119%;
+}
+
+/* Arrow Of About Section */
+.arrow-right {
+  position: absolute;
+  border: solid #ccc;
+  border-width: 0 5px 5px 0;
+  padding: 4px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  top: 20%;
+  left: -10px;
+}
+
+/* Create Of style side Nav */
+.about .side-nav {
+  position: absolute;
+  list-style: none;
+  left: 0;
+  top: 50%;
+}
+
+/* Style Of Line Skills */
+.line-html,
+.line-node,
+.line-css {
+  background-image: linear-gradient(
+    to right,
+    #2196f3 90%,
+    transparent 90% 100%
+  );
+  width: 100%;
+  height: 10px;
+}
+
+.html {
+  left: 85%;
+}
+
+.line-node {
+  width: 80%;
+}
+
+.line-css {
+  width: 90%;
+}
+
+.node {
+  left: 66%;
+}
+
+.css {
+  left: 75%;
+}
+
+/* Circule Shape Of Summary Section */
+.sum-info h4::after,
+.sum-info .back::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #2196f3;
+  left: -9px;
+  top: 0;
+}
+
+.sum-info .back::after {
+  top: 50%;
+}
+
+/* Shape Background Of Services Section*/
+.services .card i {
+  border-top-left-radius: 70%;
+  border-top-right-radius: 40%;
+  border-bottom-left-radius: 35%;
+  border-bottom-right-radius: 28%;
+  background-color: #ccc;
+}
+
+/* Style Of Image Of Test Section Slide */
+.test img {
+  width: 200px;
+  height: 200px;
+}
+
+/* Style Of Circule Of Slide Button */
+.carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+}
